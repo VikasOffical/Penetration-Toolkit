@@ -11,42 +11,42 @@
 
 # **🛠️ Installation**
 
-Ensure you have Python installed (version 3.x recommended) and install the required dependencies:
+**Ensure you have Python installed (version 3.x recommended) and install the required dependencies:**
 
-pip install -r requirements.txt
+**pip install -r requirements.txt**
 
 # **🎯 Usage Guide**
 Easily run penetration tests using command-line arguments:
 
 ## **🔍 1. Port Scanning**
 
-Scan for open ports within a specific range:
+**Scan for open ports within a specific range:**
 
-python main.py scan <target> --start <start_port> --end <end_port>
+**python main.py scan <target> --start <start_port> --end <end_port>**
 
-Example:
+### **Example:**
 
-python main.py scan 192.168.1.1 --start 20 --end 100
+**python main.py scan 192.168.1.1 --start 20 --end 100**
 
 ## **🔑 2. Brute-Force Attack**
 
-Test login credentials with a password list:
+**Test login credentials with a password list:**
 
-python main.py brute <url> <username> <password_file>
+**python main.py brute <url> <username> <password_file>**
 
 # **Example:**
 
-python main.py brute http://example.com/login admin passwords.txt
+**python main.py brute http://example.com/login admin passwords.txt**
 
 # **🛡️ 3. Vulnerability Scanning**
 
-Scan for SQL Injection and XSS vulnerabilities:
+**Scan for SQL Injection and XSS vulnerabilities:**
 
-python main.py vuln <url> <param>
+**python main.py vuln <url> <param>**
 
 # **Example:**
 
-python main.py vuln http://example.com/search query
+**python main.py vuln http://example.com/search query**
 
 ##  **📂 Project Structure**
 
@@ -74,21 +74,21 @@ python main.py vuln http://example.com/search query
 
 # ✅ Running Tests
 
-Run unit tests to ensure functionality:
+**Run unit tests to ensure functionality:**
 
-pytest
+**pytest**
 
 # 🤝 Contributing
 
-We welcome contributions! Fork the repo, create a feature branch, and submit a pull request. Report bugs or suggest features via GitHub Issues.
+**We welcome contributions! Fork the repo, create a feature branch, and submit a pull request. Report bugs or suggest features via GitHub Issues.**
 
 # ⚠️ Disclaimer
 
-🚨 This toolkit is for educational and ethical hacking purposes only. Unauthorized or malicious use is strictly prohibited and may lead to legal consequences.
+**🚨 This toolkit is for educational and ethical hacking purposes only. Unauthorized or malicious use is strictly prohibited and may lead to legal consequences.**
 
-# 📜 License
+# **📜 License**
 
-This project is open-source and licensed under the MIT License. Feel free to use and modify it for ethical hacking and research purposes.
+**This project is open-source and licensed under the MIT License. Feel free to use and modify it for ethical hacking and research purposes.**
 
 # 🔥 Stay ethical, hack responsibly, and secure the digital world! 🔥
 
