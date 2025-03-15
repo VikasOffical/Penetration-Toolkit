@@ -1,4 +1,15 @@
 # **🔥 Penetration Testing Toolkit 🔥**
+**COMPANY: CODETECH IT SOLUTIONS**
+
+**NAME: GYANMOTAY VIKAS**
+
+**INTERN ID: CT12RGV**
+
+**DOMAIN: CYBER SECURITY & ETHICAL HACKING**
+
+**DURATION: 8 WEEKS**
+
+**MENTOR: NELLA SANTOSH**
 
 # **🚀 Overview**
 ### **Welcome to the Python-based modular penetration testing toolkit—your go-to solution for ethical hacking and security testing. Designed for professionals and cybersecurity enthusiasts, this toolkit provides a robust set of modules for network scanning, brute-force attacks, and vulnerability assessment.**
