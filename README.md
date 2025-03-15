@@ -101,5 +101,125 @@ Easily run penetration tests using command-line arguments:
 
 **This project is open-source and licensed under the MIT License. Feel free to use and modify it for ethical hacking and research purposes.**
 
-# 🔥 Stay ethical, hack responsibly, and secure the digital world! 🔥
+## 🔥 Stay ethical, hack responsibly, and secure the digital world! 🔥
 
+# **OUTPUT:**
+## **1. Port Scanner**
+
+**Command:**
+python main.py scan 127.0.0.1 --start 1 --end 1024
+
+**Output:**
+Scanning ports: 100%|████████████████████████████████████████| 1024/1024 [00:10<00:00, 100.00 ports/s]
+Open ports: [22, 80, 443]
+
+## **2. Brute Forcer**
+
+**Command:**
+python main.py brute http://example.com/login admin passwords.txt
+
+**Output:**
+Trying password: password123
+Trying password: admin123
+Login successful: ('admin', 'admin123')
+
+## **3. Vulnerability Scanner**
+
+**Command:**
+python main.py vuln http://example.com/search?query=test query
+
+**Output:**
+Testing for SQL Injection...
+SQL Injection vulnerability found!
+
+Testing for XSS...
+XSS vulnerability found!
+
+## **4. Error Handling**
+**Example: Invalid IP Address**
+
+**Command:**
+python main.py scan invalid_ip --start 1 --end 100
+
+**Output:**
+Invalid IP address
+
+## **5. Progress Bar (Port Scanner with tqdm)**
+
+**Command:**
+python main.py scan 127.0.0.1 --start 1 --end 1024
+
+**Output:**
+Scanning ports: 100%|████████████████████████████████████████| 1024/1024 [00:10<00:00, 100.00 ports/s]
+Open ports: [22, 80, 443]
+
+## **6. Colored Output**
+**Example: Successful Login**
+
+**Command:**
+python main.py brute http://example.com/login admin passwords.txt
+
+**Output:**
+Trying password: password123
+Trying password: admin123
+Login successful: ('admin', 'admin123')  # This line will be green
+
+## **Example: Failed Login**
+
+**Command:**
+python main.py brute http://example.com/login admin wrong_passwords.txt
+
+**Output:**
+Trying password: wrong1
+Trying password: wrong2
+Login failed  # This line will be red
+
+## **7. Reporting**
+**Example: JSON Report**
+
+**Command:**
+python main.py scan 127.0.0.1 --start 1 --end 1024 --format json
+
+**Output:**
+json
+Copy
+{
+  "target": "127.0.0.1",
+  "open_ports": [22, 80, 443],
+  "timestamp": "2023-10-15T12:34:56Z"
+}
+
+## **8. Unit Tests**
+
+**Command:**
+python -m pytest tests/
+
+**Output:**
+============================= test session starts =============================
+collected 3 items
+
+tests/test_port_scanner.py .                                             [ 33%]
+tests/test_brute_forcer.py .                                             [ 66%]
+tests/test_utils.py .                                                    [100%]
+
+============================== 3 passed in 0.05s ==============================
+
+## **9. Interactive Shell Mode**
+**Command:**
+python main.py shell
+
+**Output:**
+Welcome to the Penetration Testing Toolkit shell!
+Type 'help' for a list of commands.
+
+> scan 127.0.0.1 --start 1 --end 1024
+Scanning ports: 100%|████████████████████████████████████████| 1024/1024 [00:10<00:00, 100.00 ports/s]
+Open ports: [22, 80, 443]
+
+> brute http://example.com/login admin passwords.txt
+Trying password: password123
+Trying password: admin123
+Login successful: ('admin', 'admin123')
+
+> exit
+Goodbye!
